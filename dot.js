@@ -2,10 +2,11 @@
     var doc = document,win = window,config = {'debug':true};
     function dot () {
         this.config = config;
+        this.init();
     }
     dot.prototype = {
         init : function() {
-        
+                        
         },
         getSystem : function() {
         
