@@ -1,20 +1,30 @@
 (function() {
-    var doc = document;
-    var win = window;
-    var config = {};
+    var doc = document,win = window,config = {'debug':true};
     function dot () {
-        
+        this.config = config;
     }
     dot.prototype = {
-        init = function() {
+        init : function() {
         
         },
-        getSystem = function() {
+        getSystem : function() {
         
         },
-        setSystem = function() {
+        setSystem : function() {
         
+        },
+        amd : function() {
+            return true;
+        },
+        version : function() {
+            return 'v0.1';
+        },
+        show : function() {
+
+        },
+        hidden : function() {
+
         }
     };
-
+    win.dot = new dot();
 })();
